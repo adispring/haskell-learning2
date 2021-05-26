@@ -1,6 +1,7 @@
 module Main where
 
-import Lib
+import           Lib
+import           ListII
 
 main :: IO ()
-main = someFunc
+main = print (getX (MakePosition 3 4))

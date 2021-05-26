@@ -26,6 +26,9 @@ source-repository head
 library
   exposed-modules:
       Lib
+      ListII
+      Tree
+      TypeDemo
   other-modules:
       Paths_my_project2
   hs-source-dirs:
