@@ -26,6 +26,7 @@ source-repository head
 library
   exposed-modules:
       Chapter2.Data
+      Chapter2.PatternMatching
       Lib
       ListII
       Test
