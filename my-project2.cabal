@@ -28,6 +28,7 @@ library
       Chapter2.Data
       Chapter2.MultiDataConstructor
       Chapter2.PatternMatching
+      Chapter2.RecordSyntax
       Lib
       ListII
       Test
