@@ -1,7 +1,11 @@
 module Main where
 
-import           Lib
-import           ListII
+import Lib ( Position(MakePosition, getX), someFunc )
+import ListII ()
+
+addOneMaybe :: Maybe Int -> Maybe Int
+addOneMaybe (Just x) = Just (x + 1)
+addOneMaybe Nothing =  Nothing
 
 main :: IO ()
-main = print (getX (MakePosition 3 4))
+main = print (addOneMaybe (Just 1))

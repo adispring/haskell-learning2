@@ -4,7 +4,7 @@ module Lib
       someFunc
     ) where
 
-import           Acme.Missiles
+import Acme.Missiles ( launchMissiles )
 
 someFunc :: IO ()
 someFunc = launchMissiles
