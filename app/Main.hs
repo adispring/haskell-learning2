@@ -14,5 +14,8 @@ main = do {
       pointB = Chapter2.MultiDataConstructor.Cartesian 3 4
       d = Chapter2.MultiDataConstructor.distance pointA pointB
   in  print d
-  ; print (Chapter2.RecordSyntax.getX $ Chapter2.RecordSyntax.MakePosition 3 4)
+  ; print (Chapter2.RecordSyntax.positionX $ Chapter2.RecordSyntax.MakePosition 3 4)
+  ; let pointFoo = Chapter2.RecordSyntax.MakePosition { Chapter2.RecordSyntax.positionX = 3, Chapter2.RecordSyntax.positionY = 4 }
+        pointBar = pointFoo { Chapter2.RecordSyntax.positionY = 5 }
+    in print  (pointFoo, pointBar)
 }
