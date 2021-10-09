@@ -9,4 +9,10 @@ import qualified Chapter2.MultiDataConstructor
 import qualified Chapter2.RecordSyntax
 
 main :: IO ()
-main = print (Chapter2.RecordSyntax.getX $ Chapter2.RecordSyntax.MakePosition 3 4)
+main = do {
+  let pointA = Chapter2.MultiDataConstructor.Cartesian 0 0
+      pointB = Chapter2.MultiDataConstructor.Cartesian 3 4
+      d = Chapter2.MultiDataConstructor.distance pointA pointB
+  in  print d
+  ; print (Chapter2.RecordSyntax.getX $ Chapter2.RecordSyntax.MakePosition 3 4)
+}
