@@ -29,6 +29,7 @@ library
       Chapter2.MultiDataConstructor
       Chapter2.PatternMatching
       Chapter2.RecordSyntax
+      Chapter4.HighOrderFunction
       Lib
       ListII
       Test
